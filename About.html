@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>About Us - StaticSiteLab</title>
+    <meta name="description" content="Learn about StaticSiteLab's mission, team, and our approach to modern static website development and optimization.">
+    <meta name="keywords" content="about us, static websites, web development, SEO optimization, team, mission">
+    <meta name="author" content="Lan Cheng">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About Us - StaticSiteLab">
+    <meta property="og:description" content="Learn about our mission and approach to static website development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://staticsitelab.example.com/About.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About StaticSiteLab",
+        "description": "Information about StaticSiteLab's mission and team",
+        "url": "https://staticsitelab.example.com/About.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "StaticSiteLab",
+            "description": "Modern static website experiments and tutorials"
+        },
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "StaticSiteLab",
+            "foundingDate": "2025",
+            "founder": {
+                "@type": "Person",
+                "name": "Lan Cheng"
+            },
+            "description": "A project dedicated to exploring and documenting modern static website techniques."
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #667eea;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .team-avatar {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 gradient-bg rounded-lg"></div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">StaticSiteLab</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link font-medium text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="About.html" class="nav-link font-medium text-gray-700 hover:text-gray-900">About</a>
+                    <a href="#mission" class="nav-link font-medium text-gray-700 hover:text-gray-900">Mission</a>
+                    <a href="#team" class="nav-link font-medium text-gray-700 hover:text-gray-900">Team</a>
+                    <a href="Privacy.html" class="nav-link font-medium text-gray-700 hover:text-gray-900">Privacy</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">About StaticSiteLab</h1>
+                <p class="text-xl text-gray-600">
+                    A project dedicated to exploring, testing, and documenting modern static website techniques.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Mission Section -->
+        <section id="mission" class="mb-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Mission</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <p class="text-gray-600 text-lg mb-6">
+                        StaticSiteLab was founded with a simple yet ambitious goal: to explore the full potential of static websites in the modern web ecosystem.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">The Challenge</h3>
+                            <p class="text-gray-600">
+                                Many developers overlook static websites due to perceived limitations. We believe that with the right techniques, static sites can compete with dynamic applications in many use cases.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Our Approach</h3>
+                            <p class="text-gray-600">
+                                Through practical experiments, case studies, and detailed documentation, we're building a comprehensive resource for modern static web development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Values -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-flask text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Experimental</h3>
+                        <p class="text-gray-600">
+                            We test hypotheses through real-world experiments and share our findings transparently.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-book-open text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Educational</h3>
+                        <p class="text-gray-600">
+                            Our goal is to educate and empower developers with practical knowledge and techniques.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Community-Driven</h3>
+                        <p class="text-gray-600">
+                            We believe in sharing knowledge and building resources that benefit the wider developer community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="mb-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Team</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <p class="text-gray-600 text-lg mb-8 text-center">
+                        We're a small, dedicated team passionate about web performance, SEO, and static site architecture.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Team Member 1 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="team-avatar w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                                LC
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Lan Cheng</h3>
+                                <p class="text-blue-600 font-medium mb-2">Founder & Lead Developer</p>
+                                <p class="text-gray-600">
+                                    With over 5 years of web development experience, Lan focuses on performance optimization and SEO strategies for static websites.
+                                </p>
+                                <div class="flex space-x-3 mt-3">
+                                    <a href="#" class="text-gray-500 hover:text-blue-600"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="text-gray-500 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-gray-500 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Member 2 -->
+                        <div class="flex items-start space-x-4">
+                            <div class="team-avatar w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                                TC
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Technical Contributors</h3>
+                                <p class="text-blue-600 font-medium mb-2">Community & Collaborators</p>
+                                <p class="text-gray-600">
+                                    We work with developers and technical writers from around the world who contribute experiments, tutorials, and case studies.
+                                </p>
+                                <div class="mt-3">
+                                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">
+                                        Join Our Contributors <i class="fas fa-arrow-right ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Experiments -->
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Current Focus Areas</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Active Experiments</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                    <span>SEO optimization for static content</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                    <span>Performance benchmarking</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                    <span>Monetization strategies</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-spinner text-blue-500 mr-3"></i>
+                                    <span>Accessibility improvements</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Future Plans</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-gray-400 mr-3"></i>
+                                    <span>Open source template library</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-gray-400 mr-3"></i>
+                                    <span>Detailed case studies</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-gray-400 mr-3"></i>
+                                    <span>Community workshops</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-arrow-right text-gray-400 mr-3"></i>
+                                    <span>Performance optimization tools</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section>
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="gradient-bg text-white rounded-xl shadow-lg p-12">
+                    <h2 class="text-3xl font-bold mb-6">Join Our Exploration</h2>
+                    <p class="text-xl opacity-90 mb-8">
+                        Whether you're a developer, content creator, or just curious about static websites, there's a place for you in our community.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="index.html#experiments" class="bg-white text-gray-800 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
+                            View Experiments
+                        </a>
+                        <a href="#" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-gray-800 transition duration-300">
+                            Get Updates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded-lg"></div>
+                        <span class="text-xl font-bold">StaticSiteLab</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Exploring modern static website techniques and optimization strategies.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="About.html" class="hover:text-white">About</a></li>
+                        <li><a href="Privacy.html" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Experiments</a></li>
+                        <li><a href="#" class="hover:text-white">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white">Tutorials</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 StaticSiteLab. All rights reserved. | Created by Lan Cheng</p>
+                <p class="mt-2 text-sm">This website is part of an ongoing experiment in static web development.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    navLinks.classList.toggle('hidden');
+                    navLinks.classList.toggle('flex');
+                    navLinks.classList.toggle('flex-col');
+                    navLinks.classList.toggle('absolute');
+                    navLinks.classList.toggle('top-16');
+                    navLinks.classList.toggle('left-0');
+                    navLinks.classList.toggle('right-0');
+                    navLinks.classList.toggle('bg-white');
+                    navLinks.classList.toggle('p-4');
+                    navLinks.classList.toggle('shadow-lg');
+                    navLinks.classList.toggle('space-y-4');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

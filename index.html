@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>StaticSiteLab - Modern Static Website Experiments</title>
+    <meta name="description" content="A collection of experiments and tutorials on building modern static websites with SEO optimization and monetization strategies.">
+    <meta name="keywords" content="static websites, SEO optimization, web development, frontend, monetization, Google AdSense">
+    <meta name="author" content="Lan Cheng">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="StaticSiteLab - Modern Static Website Experiments">
+    <meta property="og:description" content="Explore modern static website techniques and optimization strategies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://staticsitelab.example.com">
+    <meta property="og:image" content="https://staticsitelab.example.com/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StaticSiteLab - Modern Static Website Experiments">
+    <meta name="twitter:description" content="A collection of experiments and tutorials on building modern static websites.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "StaticSiteLab",
+        "url": "https://staticsitelab.example.com",
+        "description": "Modern static website experiments and tutorials",
+        "publisher": {
+            "@type": "Organization",
+            "name": "StaticSiteLab",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://staticsitelab.example.com/images/logo.png"
+            }
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://staticsitelab.example.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #667eea;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 gradient-bg rounded-lg"></div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">StaticSiteLab</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link font-medium text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="About.html" class="nav-link font-medium text-gray-700 hover:text-gray-900">About</a>
+                    <a href="#experiments" class="nav-link font-medium text-gray-700 hover:text-gray-900">Experiments</a>
+                    <a href="#resources" class="nav-link font-medium text-gray-700 hover:text-gray-900">Resources</a>
+                    <a href="Privacy.html" class="nav-link font-medium text-gray-700 hover:text-gray-900">Privacy</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Modern Static Website Experiments</h1>
+                <p class="text-xl mb-8 opacity-90">
+                    Exploring the potential of static websites for SEO, performance, and monetization.
+                    Join us in building fast, secure, and profitable web experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#experiments" class="bg-white text-gray-800 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
+                        View Experiments <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="About.html" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-gray-800 transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Featured Experiments -->
+        <section id="experiments" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Experiments</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Practical implementations and case studies on static website optimization techniques.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Experiment 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">SEO Optimization</h3>
+                    <p class="text-gray-600 mb-4">
+                        Testing various SEO techniques for static websites, including structured data, meta optimization, and content strategy.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        Read Case Study <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Experiment 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Performance Testing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Measuring load times, Core Web Vitals, and optimization strategies for maximum performance.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        View Results <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Experiment 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Monetization Strategies</h3>
+                    <p class="text-gray-600 mb-4">
+                        Exploring ad placement, affiliate marketing, and other revenue streams for static content sites.
+                    </p>
+                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Website Pages -->
+        <section id="pages" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Website Pages</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Essential pages for a complete and professional static website.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">About Us</h3>
+                    <p class="text-gray-600 mb-6">
+                        Learn about our mission, team, and the goals behind StaticSiteLab. Discover our approach to modern web development.
+                    </p>
+                    <a href="About.html" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                        Visit About Page <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Privacy Policy</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our commitment to user privacy and data protection. Understand how we handle information on our static websites.
+                    </p>
+                    <a href="Privacy.html" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                        Read Privacy Policy <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Resources & Tools</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Useful tools and resources for building and optimizing static websites.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4">Static Site Generators</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><a href="#" class="hover:text-blue-600">Hugo</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Jekyll</a></li>
+                            <li><a href="#" class="hover:text-blue-600">VuePress</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Eleventy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4">Hosting Platforms</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><a href="#" class="hover:text-blue-600">GitHub Pages</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Netlify</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Vercel</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Cloudflare Pages</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-4">SEO Tools</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><a href="#" class="hover:text-blue-600">Google Search Console</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Screaming Frog</a></li>
+                            <li><a href="#" class="hover:text-blue-600">Ahrefs</a></li>
+                            <li><a href="#" class="hover:text-blue-600">SEMrush</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded-lg"></div>
+                        <span class="text-xl font-bold">StaticSiteLab</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Exploring modern static website techniques and optimization strategies.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="About.html" class="hover:text-white">About</a></li>
+                        <li><a href="Privacy.html" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Experiments</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#experiments" class="hover:text-white">SEO Optimization</a></li>
+                        <li><a href="#experiments" class="hover:text-white">Performance Testing</a></li>
+                        <li><a href="#experiments" class="hover:text-white">Monetization</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Connect</h4>
+                    <p class="text-gray-400 mb-4">
+                        Follow our experiments and share your insights.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 StaticSiteLab. All rights reserved. | Created by Lan Cheng</p>
+                <p class="mt-2 text-sm">This website is part of an ongoing experiment in static web development.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    navLinks.classList.toggle('hidden');
+                    navLinks.classList.toggle('flex');
+                    navLinks.classList.toggle('flex-col');
+                    navLinks.classList.toggle('absolute');
+                    navLinks.classList.toggle('top-16');
+                    navLinks.classList.toggle('left-0');
+                    navLinks.classList.toggle('right-0');
+                    navLinks.classList.toggle('bg-white');
+                    navLinks.classList.toggle('p-4');
+                    navLinks.classList.toggle('shadow-lg');
+                    navLinks.classList.toggle('space-y-4');
+                });
+            }
+            
+            // Update active nav link
+            const currentPage = window.location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('text-blue-600');
+                    link.classList.remove('text-gray-700');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
