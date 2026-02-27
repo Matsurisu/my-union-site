@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 基础SEO标签 -->
+    <title>SEO测试页面 - 静态网站搭建实验</title>
+    <meta name="description" content="这是一个用于测试SEO和网站链路的HTML页面，包含基本的结构化数据和语义化标签。">
+    <meta name="keywords" content="SEO测试, 静态网站, HTML5, 语义化标签, 网站优化">
+    <meta name="author" content="兰成">
+    
+    <!-- Open Graph 社交分享标签 -->
+    <meta property="og:title" content="SEO测试页面 - 静态网站搭建实验">
+    <meta property="og:description" content="测试SEO优化和网站链路的实验页面">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/seo_test.html">
+    
+    <!-- 结构化数据 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SEO测试页面",
+        "description": "用于测试SEO优化的实验页面",
+        "author": {
+            "@type": "Person",
+            "name": "兰成"
+        },
+        "datePublished": "2025-02-24",
+        "publisher": {
+            "@type": "Organization",
+            "name": "静态网站实验项目"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        
+        article {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        aside {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #4a5568;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        h3 {
+            color: #2d3748;
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .test-section {
+            background: #edf2f7;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+        
+        .seo-checklist {
+            background: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #4299e1;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #3182ce;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 语义化头部 -->
+    <header>
+        <h1>SEO测试页面</h1>
+        <p class="subtitle">静态网站搭建与SEO优化实验</p>
+        <p>创建者：兰成 | 助手：兰言</p>
+    </header>
+
+    <main>
+        <!-- 主要内容区域 -->
+        <article>
+            <h2>页面内容测试</h2>
+            
+            <section class="test-section">
+                <h3>H1-H6标题层级测试</h3>
+                <p>这是一个完整的标题层级结构，用于测试SEO的标题语义化。</p>
+                
+                <h4>四级标题示例</h4>
+                <p>这是四级标题下的内容段落，展示文本内容的层次结构。</p>
+                
+                <h5>五级标题示例</h5>
+                <p>更细分的章节内容，用于测试深层页面结构。</p>
+            </section>
+            
+            <section>
+                <h3>关键词密度测试</h3>
+                <p>这个页面包含了多个<strong>SEO测试</strong>相关的关键词，如<strong>静态网站</strong>、<strong>HTML5语义化</strong>、<strong>网站优化</strong>等。</p>
+                <p>通过合理的关键词分布，可以提升页面在搜索引擎中的<strong>SEO排名</strong>和<strong>可见性</strong>。</p>
+            </section>
+            
+            <section class="seo-checklist">
+                <h3>已实现的SEO功能</h3>
+                <ul>
+                    <li>✓ 语义化HTML5标签</li>
+                    <li>✓ 完整的meta描述和关键词</li>
+                    <li>✓ Open Graph社交分享标签</li>
+                    <li>✓ JSON-LD结构化数据</li>
+                    <li>✓ 响应式设计</li>
+                    <li>✓ 清晰的标题层级</li>
+                    <li>✓ 内部链接结构</li>
+                    <li>✓ 移动端优化</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>测试链接</h3>
+                <p>以下是用于测试的链接：</p>
+                <ul>
+                    <li><a href="#top" title="返回顶部">内部锚点链接</a></li>
+                    <li><a href="https://example.com/about" rel="nofollow">nofollow测试链接</a></li>
+                    <li><a href="mailto:test@example.com">邮件链接测试</a></li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- 侧边栏 -->
+        <aside>
+            <h2>项目信息</h2>
+            
+            <section>
+                <h3>关于这个测试</h3>
+                <p>这个页面是为了测试：</p>
+                <ol>
+                    <li>基本的HTML/CSS功能</li>
+                    <li>SEO元素配置</li>
+                    <li>响应式布局</li>
+                    <li>结构化数据</li>
+                    <li>网站部署链路</li>
+                </ol>
+            </section>
+            
+            <section>
+                <h3>下一步计划</h3>
+                <ul>
+                    <li>添加更多页面</li>
+                    <li>集成Google Analytics</li>
+                    <li>配置AdSense广告位</li>
+                    <li>部署到GitHub Pages</li>
+                    <li>绑定自定义域名</li>
+                </ul>
+                
+                <a href="#" class="cta-button">查看完整项目</a>
+            </section>
+            
+            <section>
+                <h3>技术栈</h3>
+                <p>HTML5, CSS3, JavaScript</p>
+                <p>计划添加：VuePress, Hugo, 或纯静态生成器</p>
+            </section>
+        </aside>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 静态网站实验项目 | 创建者：兰成 | AI助手：兰言</p>
+        <p>最后更新：2025年2月24日</p>
+        <p>这是一个测试页面，用于学习和实验目的。</p>
+        
+        <!-- 隐藏的测试文本（用于关键词密度） -->
+        <div style="display:none;">
+            <p>SEO测试 静态网站 HTML5 语义化标签 网站优化 搜索引擎优化 兰成 兰言 前端开发 网页设计</p>
+        </div>
+    </footer>
+
+    <!-- 简单的JavaScript测试 -->
+    <script>
+        console.log('SEO测试页面加载完成');
+        
+        // 页面加载时间测试
+        window.addEventListener('load', function() {
+            const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+            console.log('页面加载时间：' + loadTime + 'ms');
+        });
+        
+        // 简单的交互测试
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('按钮点击测试成功！这是一个模拟的CTA按钮。');
+        });
+    </script>
+</body>
+</html>
